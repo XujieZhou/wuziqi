@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>五子棋</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script src="js/jquery.js"></script>
+	<script src="js/index.js"></script>
+	<body>
+		<audio src="luozi.mp3" id="audio"></audio>
+		<div class="bg">
+			<!--<img src="img/baihe.png" alt="" class="baihe"/>
+			<img src="img/heihe.png" alt="" class="heihe"/>
+			<img src="img/gai.png" alt="" class="gai"/>-->
+			<div class="fanhui">返回</div>
+			<div class="hui">悔棋</div>
+			<div class="ren">认输</div>
+			<div class="chongxin">重新开始</div>
+			<div class="kanpu">查看棋谱</div>
+		</div>
+		<div class="qipu">
+			<div class="closepu">×</div>
+		</div>
+		<div class="shye">
+			<div class="kaishi">
+				<img src="img/kaishi.jpg" alt="" />
+				<canvas id="start" width="150" height="100">
+				</canvas>
+				<div class="rr"></div>
+				<div class="rj"></div>
+			</div>
+			<div class="jieshao yxjs">游戏介绍</div>
+			<div class="jieye">
+				<p>１．行棋顺序</p>
+				<p>对局双方各执一色棋子，黑先、白后交替下子，每次只能下一子。黑方的第一枚棋子应下在天元上。棋子下在棋盘的交叉点上，棋子下定后，不得向其它点移动，不得从棋盘上拿起另落别处。</p>
+				<p>２．判断胜负</p>
+				<p>（1）一方首先在棋盘的直线或横线或斜线上形成连续的五子或五子以上(特指白方)。</p>
+				<p>（2）对方表示认输。</p>
+			
+				<div class="guan">关闭</div>
+			</div>
+			<div class="tuichu">退出游戏</div>
+		</div>
+		<div class="shye2">
+			<div class="queding">
+				<div>你确定退出该游戏吗？</div>
+				<div id="close">确定</div>
+				<div id="no">不退出</div>
+			</div>
+		</div>
+		<canvas id="canvas" width="600" height="600">
+		</canvas>
+		<canvas id="canva" width="100" height="100">
+		</canvas>
+		<canvas id="canv" width="100" height="100">
+		</canvas>
+		<canvas id="hei" width="75" height="40"></canvas>
+		<canvas id="bai" width="70" height="40"></canvas>
+		<div class="zailai">
+			<span id="se">我 认</span><span id="ying">输 了！</span>
+			<div class="again">再来一局</div>
+			<div class="zaiclone">退出</div>
+		</div>
+		<div class="wan1">玩家一</div>
+		<div class="wan2">玩家二</div>
+	</body>
+</html>
