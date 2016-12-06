@@ -158,13 +158,13 @@ $(function(){
 		if (Ai) {
 			luozi(x,y,'black');
 			if (Win(x,y,"black")>=5) {
-		     	$(".zailai").find("#se").html("黑 棋").end().addClass("zaimove");
+		     	$(".zailai").find("#se").html("黑 棋 赢 了！").end().addClass("zaimove");
             	$(canvas).off("click");
 		     }
 			var p1=intel();
 			luozi(p1.x,p1.y,"white");
 			if (Win(p1.x,p1.y,"white")>=5) {
-		     	$(".zailai").find("#se").html("白 棋").end().addClass("zaimove");
+		     	$(".zailai").find("#se").html("白 棋 赢 了！").end().addClass("zaimove");
             	$(canvas).off("click");
 		     };
 			return false;
@@ -178,7 +178,7 @@ $(function(){
 			t2=setInterval(miaozhen2,1000);
 			if(Win(x,y,'black')>=5){
 				$(canvas).off("click");
-				$(".zailai").find("#se").html("黑 棋").end().addClass("zaimove");
+				$(".zailai").find("#se").html("黑 棋 赢 了！").end().addClass("zaimove");
 			}
 		}else{
 			luozi(x,y,"white");
@@ -189,7 +189,7 @@ $(function(){
 			t1=setInterval(miaozhen,1000);
 			if(Win(x,y,'white')>=5){
 				$(canvas).off("click");
-				$(".zailai").find("#se").html("白 棋").end().addClass("zaimove");
+				$(".zailai").find("#se").html("白 棋 赢 了！").end().addClass("zaimove");
 			}
 		}
 		kaiguan=!kaiguan;
@@ -427,7 +427,7 @@ $(function(){
 	//认输
 	$(".ren").on("click",function(){
 		$(canvas).off("click");
-		$(".zailai").find("#se").html("我 认").end().addClass("zaimove");
+		$(".zailai").find("#se").html("我 认 输 了！").end().addClass("zaimove");
 	})
 	
 	
